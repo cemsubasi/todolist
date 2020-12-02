@@ -23,11 +23,11 @@ export default function App() {
 		    <h2>To Do List</h2>
 	    	    <hr/><br/>
 	    	    <input onChange={addInput} value={input} />
-	    	    <button className="btn btn-outline-light" onClick={()=> input ? addToList(input) & setInput("") : null } >Add</button>
 	    	    <br/>
 	    	    <br/>
 		    <Users users={users} userMapping={userMapping} />
 	    	    <br/>
+	    	    <button className="btn btn-outline-light" onClick={()=> input ? addToList(input) & setInput("") : null } >Add</button>
 	    	    <button className="btn btn-outline-light" onClick={userDelete}>Delete</button>
 	    </div>
 	    </div>
